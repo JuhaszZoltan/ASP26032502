@@ -42,4 +42,7 @@ Scaffold-DbContext "Name=ConnectionStrings:DefaultConnection" Microsoft.EntityFr
 - `DbContext class: ` <- az előző lépésben scaffoldolt context osztály (`ApplicationDbContext`)
 - `Controller name: ` <- Konvenció szerint Pascal case, model neve többesszámban + Controller (ez az alapértelmezett javaslat)
 
-> **[2026-03-26 állapot szerint]:** a Visual Studio 2026 már nem támogatja alapértelmezetten a SwaggerUI-t (van viszont tesztelésre egy új tool, Endpoint Explorer)
+> **[2026-03-26 állapot szerint]:** a Visual Studio 2026 már nem támogatja alapértelmezetten a SwaggerUI-t. van egy built-in tool, az Endpoint Explorer, de komoly problémákat tapasztalok vele, és messze nem olyan intuitív. A Swagger re-implementációját vagy valamilyen alternatíva használatát javaslom API tesztre vagy API dokumentáció készítésére: Postman, Scalar vagy Redoc [csak dokumentációhoz]))
+
+## fix action-method annotations (for Swagger)
+
