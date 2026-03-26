@@ -1,6 +1,0 @@
-@ASP26032502_HostAddress = http://localhost:5045
-
-GET {{ASP26032502_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

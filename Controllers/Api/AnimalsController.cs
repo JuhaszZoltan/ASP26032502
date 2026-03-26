@@ -16,14 +16,12 @@ public class AnimalsController : ControllerBase
         _context = context;
     }
 
-    // GET: api/Animals
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Animal>>> GetAnimals()
     {
         return await _context.Animals.ToListAsync();
     }
 
-    // GET: api/Animals/5
     [HttpGet("{id:int}")]
     public async Task<ActionResult<Animal>> GetAnimal(int id)
     {
@@ -37,8 +35,6 @@ public class AnimalsController : ControllerBase
         return animal;
     }
 
-    // PUT: api/Animals/5
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     [HttpPut("{id:int}")]
     public async Task<IActionResult> PutAnimal(int id, Animal animal)
     {
@@ -68,8 +64,6 @@ public class AnimalsController : ControllerBase
         return NoContent();
     }
 
-    // POST: api/Animals
-    // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
     [HttpPost]
     public async Task<ActionResult<Animal>> PostAnimal(Animal animal)
     {
@@ -79,7 +73,6 @@ public class AnimalsController : ControllerBase
         return CreatedAtAction("GetAnimal", new { id = animal.AnimalId }, animal);
     }
 
-    // DELETE: api/Animals/5
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> DeleteAnimal(int id)
     {
