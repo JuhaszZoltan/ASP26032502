@@ -65,7 +65,9 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 ~## ORM service configuration~
 
 ~a `Program.cs`-ben az `// Add services to the container.` sor alá add hozzá a következő kódot:~
+
 <== scaffold utasítás ezeket a sorokat már hozzáadja a pragram.cs-hez!
+
 ```csharp
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found");
