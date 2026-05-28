@@ -62,11 +62,11 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 - `DbContext class: ` <- az előző lépésben scaffoldolt context osztály (`ApplicationDbContext`)
 - `Controller name: ` <- Konvenció szerint Pascal case, model neve többesszámban + Controller (ez az alapértelmezett javaslat)
 
-~## ORM service configuration~
+## ORM service configuration
+
+<== **scaffold utasítás ezeket a sorokat már hozzáadja a pragram.cs-hez!**
 
 ~a `Program.cs`-ben az `// Add services to the container.` sor alá add hozzá a következő kódot:~
-
-<== scaffold utasítás ezeket a sorokat már hozzáadja a pragram.cs-hez!
 
 ```csharp
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
@@ -74,7 +74,7 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<ApplicationDbContext>(options => 
     options.UseSqlServer(connectionString));
 ```
-a működéshez szükséges `using` direktívák:
+~a működéshez szükséges `using` direktívák:~
 
 ```csharp
 using <project_namespace>.Data;
