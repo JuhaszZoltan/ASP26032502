@@ -13,7 +13,6 @@ a következő csomagokra lesz szükség (`Package Manager Console`):
 Install-Package Microsoft.EntityFrameworkCore
 Install-Package Microsoft.EntityFrameworkCore.SqlServer
 Install-Package Microsoft.EntityFrameworkCore.Tools
-Install-Package Microsoft.VisualStudio.Web.CodeGeneration.Design
 Install-Package Swashbuckle.AspNetCore.SwaggerUI
 ```
 
