@@ -62,7 +62,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 - `DbContext class: ` <- az előző lépésben scaffoldolt context osztály (`ApplicationDbContext`)
 - `Controller name: ` <- Konvenció szerint Pascal case, model neve többesszámban + Controller (ez az alapértelmezett javaslat)
 
-## ORM service configuration
+## ~ORM service configuration~
 
 <== **scaffold utasítás ezeket a sorokat már hozzáadja a pragram.cs-hez!**
 
