@@ -11,6 +11,7 @@ helyezd a `~/Data` mappába a `<database_script_name>.sql` scriptfile-t, és fut
 a következő csomagokra lesz szükség (`Package Manager Console`):
 ```shell
 Install-Package Microsoft.EntityFrameworkCore
+Install-Package Microsoft.EntityFrameworkCore.Design
 Install-Package Microsoft.EntityFrameworkCore.SqlServer
 Install-Package Microsoft.EntityFrameworkCore.Tools
 Install-Package Swashbuckle.AspNetCore.SwaggerUI
